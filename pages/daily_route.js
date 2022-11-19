@@ -75,11 +75,16 @@ const Daily_route = () => {
 
   return (
     <>
-      <div style={{ backgroundColor: "blue" }}>
-        <div className="w-100 h-100 text-white container">
-          <h1 className="text-center pt-3">Daily Route Records</h1>
+      <div style={{ backgroundColor: "yellow" }}>
+        <div className="w-100 h-100   pt-3">
+          <h1
+            className="text-center text-white rounded-4"
+            style={{ backgroundColor: "green" }}
+          >
+            Daily Route Records
+          </h1>
           <div className="d-flex row py-5 float-end">
-            <div className="col-8">
+            <div className="col-6">
               <Form>
                 <Form.Group
                   className="mb-3"
@@ -95,7 +100,7 @@ const Daily_route = () => {
                 </Form.Group>
               </Form>
             </div>
-            <div className="col-3">
+            <div className="col-2 me-2">
               <Dropdown as={ButtonGroup}>
                 <Button variant="success">{searchselect}</Button>
 
@@ -119,7 +124,8 @@ const Daily_route = () => {
               </Dropdown>
             </div>
           </div>
-          <div className="col-3">
+
+          <div className="pt-5 container">
             {verify_status === true ? (
               <Button>
                 <Link
@@ -133,8 +139,6 @@ const Daily_route = () => {
             ) : (
               <></>
             )}
-          </div>
-          <div className="pt-5">
             <table
               className=" table table-striped table-bordered table-hover fw-bold"
               variant="light"
@@ -151,7 +155,7 @@ const Daily_route = () => {
                   <th className=" ">I.D</th>
                   <th className=" ">Date</th>
                   <th className=" ">Bus No</th>
-                  <th className=" ">Travel Route</th>
+                  <th className=" ">Daily Travel Route</th>
                   <th className=" ">Arrival Time</th>
                   <th className=" ">Departure Time</th>
                   <th className=" ">Seat Booked</th>

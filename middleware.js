@@ -4,8 +4,6 @@ import {
 import axios from 'axios'
 
 export default async function Middleware(req, res) {
-
-
     if (req.nextUrl.pathname.startsWith('/app')) {
         if (req.cookies.get('token') !== undefined) {
             let tokens = req.cookies.get('token').value
@@ -19,6 +17,7 @@ export default async function Middleware(req, res) {
                     return NextResponse.next();
                 })
                 .catch((error) => {
+                    console.log("not valid token")
                     return NextResponse.redirect(new URL('/', req.url))
 
                 });

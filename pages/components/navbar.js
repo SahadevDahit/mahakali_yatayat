@@ -26,7 +26,12 @@ const Navbar = () => {
       >
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            <h2>MahakaliYatayat</h2>
+            <h5
+              className="fw-bold text-white ps-1 rounded-4"
+              style={{ backgroundColor: "black" }}
+            >
+              महाकाली यातायात बहुउद्देश्यीय कम्पनी प्रा.लि
+            </h5>
           </a>
           <button
             className="navbar-toggler"
@@ -40,30 +45,31 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav ms-auto pe-3">
+            <ul className="navbar-nav ms-auto pe-2">
               <li className="nav-item">
                 <Link
-                  className="nav-link active fs-5"
+                  className="nav-link active fs-5 text-white"
                   aria-current="page"
                   href="/"
                 >
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item active">
                 <Link
-                  className="nav-link active fs-5"
+                  className="nav-link active fs-5 text-white"
                   aria-current="page"
-                  href="/daily_route"
+                  href="/aboutUs"
                 >
-                  Daily Route
+                  About Us
                 </Link>
               </li>
+
               {verify_status == true ? (
                 <>
                   <li className="nav-item active dropdown">
                     <a
-                      className="nav-link active dropdown-toggle fs-5"
+                      className="nav-link active dropdown-toggle fs-5 text-white"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -74,7 +80,7 @@ const Navbar = () => {
                     <ul className="dropdown-menu">
                       <li>
                         <Link
-                          className="dropdown-item  fs-5 "
+                          className="dropdown-item  fs-5  "
                           href="/app/counters/karyalaye_amdani"
                         >
                           Karyalaye Aamdani
@@ -82,7 +88,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <Link
-                          className="dropdown-item fs-5"
+                          className="dropdown-item fs-5 "
                           href="/app/counters/upakar_counter"
                         >
                           Upakar Counter
@@ -101,7 +107,7 @@ const Navbar = () => {
 
                   <li className="nav-item active dropdown fs-5">
                     <a
-                      className="nav-link active dropdown-toggle"
+                      className="nav-link active dropdown-toggle text-white"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -112,7 +118,7 @@ const Navbar = () => {
                     <ul className="dropdown-menu">
                       <li>
                         <Link
-                          className="dropdown-item fs-5"
+                          className="dropdown-item fs-5 "
                           href="/app/company/company_account"
                         >
                           Company Account
@@ -130,7 +136,7 @@ const Navbar = () => {
                   </li>
                   <li className="nav-item  active dropdown fs-5">
                     <a
-                      className="nav-link active dropdown-toggle"
+                      className="nav-link active dropdown-toggle text-white"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -149,7 +155,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <Link
-                          className="dropdown-item fs-5"
+                          className="dropdown-item fs-5 "
                           href="/app/staff/staffs_salary"
                         >
                           Staff Salary
@@ -157,9 +163,39 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </li>
-                  <li className="nav-item fs-5">
+                  <li className="nav-item  active dropdown fs-5">
+                    <a
+                      className="nav-link active dropdown-toggle text-white"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Loan
+                    </a>
+                    <ul className="dropdown-menu">
+                      <li>
+                        <Link
+                          className="dropdown-item fs-5"
+                          href="/app/loan/loans"
+                        >
+                          Loan
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          className="dropdown-item fs-5 "
+                          href="/app/loan/advances"
+                        >
+                          Advance
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li className="nav-item fs-5 text-white">
                     <Link
-                      className="nav-link active"
+                      className="nav-link active text-white"
                       aria-current="page"
                       href="/app/share_holder"
                     >
@@ -170,18 +206,19 @@ const Navbar = () => {
               ) : (
                 <></>
               )}
-              <li className="nav-item active">
+              <li className="nav-item">
                 <Link
-                  className="nav-link active fs-5"
+                  className="nav-link active fs-5 text-white"
                   aria-current="page"
-                  href="/aboutUs"
+                  href="/daily_route"
                 >
-                  About Us
+                  Daily Route
                 </Link>
               </li>
+
               <li className="nav-item active fs-5">
                 <Link
-                  className="nav-link active"
+                  className="nav-link active text-white"
                   aria-current="page"
                   href="/login"
                 >

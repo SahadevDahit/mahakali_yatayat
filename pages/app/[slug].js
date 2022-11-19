@@ -9,6 +9,8 @@ import Staff_salary from "../curd_form/staffs_salary";
 import Office_income from "../curd_form/karyalaya_amdani";
 import Upakar_counter from "../curd_form/upakar_counter";
 import Nagadh_Route_Counters from "../curd_form/nagadh_route_counter";
+import Loan from "../curd_form/loan";
+import Advance from "../curd_form/advances";
 const Sharehoder_id = () => {
   const [props, setprops] = useState("");
   const router = useRouter();
@@ -76,6 +78,20 @@ const Sharehoder_id = () => {
     return (
       <div>
         <DailyRoute id={router.query.id} />
+      </div>
+    );
+  }
+  if (router.query.slug == "loan") {
+    return (
+      <div>
+        <Loan id={router.query.id} />
+      </div>
+    );
+  }
+  if (router.query.slug == "advance") {
+    return (
+      <div>
+        <Advance id={router.query.id} />
       </div>
     );
   }
