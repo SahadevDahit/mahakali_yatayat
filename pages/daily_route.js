@@ -28,7 +28,7 @@ const Daily_route = () => {
   };
   useEffect(() => {
     axios
-      .get("${process.env.URL}/user/verify", {
+      .get(`${process.env.NEXT_PUBLIC_URL}/user/verify`, {
         headers: {
           token: localStorage.getItem("token"),
         },
@@ -120,12 +120,12 @@ const Daily_route = () => {
             </div>
           </div>
           <div className="col-3">
-            {verify_status == true ? (
+            {verify_status === true ? (
               <Button>
                 <Link
                   variant="dark"
                   className="float-end "
-                  href={{ pathname: "/dailyroute", query: { id: "000" } }}
+                  href={{ pathname: "/app/dailyroute", query: { id: "000" } }}
                 >
                   Add
                 </Link>

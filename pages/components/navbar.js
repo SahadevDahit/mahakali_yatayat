@@ -20,7 +20,10 @@ const Navbar = () => {
   }, []);
   return (
     <div className="container-fluid p-0 ">
-      <nav className="navbar navbar-expand-lg bg-primary fw-bold">
+      <nav
+        className="navbar navbar-expand-lg  fw-bold"
+        style={{ backgroundColor: "red" }}
+      >
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <h2>MahakaliYatayat</h2>

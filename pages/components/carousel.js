@@ -10,7 +10,7 @@ const carousel = () => {
 
           <Carousel.Caption
             className="rounded-4"
-            style={{ backgroundColor: "rgba(0,0,0,0.5)" }}
+            style={{ backgroundColor: "red" }}
           >
             <h3>महाकाली यातायात बहुउद्देश्यीय कम्पनी प्रा.लि</h3>
             <p>प्रधान कार्यालय: भीमदत्त नगरपालिका-४,कन्चनपुर,७</p>
@@ -22,7 +22,7 @@ const carousel = () => {
 
           <Carousel.Caption
             className="rounded-4"
-            style={{ backgroundColor: "rgba(0,0,0,0.5)" }}
+            style={{ backgroundColor: "red" }}
           >
             <h3>महाकाली यातायात बहुउद्देश्यीय कम्पनी प्रा.लि</h3>
             <p>प्रधान कार्यालय: भीमदत्त नगरपालिका-४,कन्चनपुर,७</p>
@@ -34,7 +34,7 @@ const carousel = () => {
 
           <Carousel.Caption
             className="rounded-4"
-            style={{ backgroundColor: "rgba(0,0,0,0.5)" }}
+            style={{ backgroundColor: "red" }}
           >
             <h3>महाकाली यातायात बहुउद्देश्यीय कम्पनी प्रा.लि</h3>
             <p>प्रधान कार्यालय: भीमदत्त नगरपालिका-४,कन्चनपुर,७</p>
