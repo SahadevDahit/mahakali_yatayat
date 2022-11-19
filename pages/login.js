@@ -3,6 +3,8 @@ import Form from "react-bootstrap/Form";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import axios from "axios";
+import Cookie from "cookie-universal";
+const cookies = Cookie();
 function Login() {
   const [formdata, setformdata] = useState({
     emailaddress: "",
@@ -27,6 +29,7 @@ function Login() {
       .then((response) => {
         if (response.status === 200) {
           localStorage.setItem("token", response.data.token);
+          cookies.set("token", response.data.token);
           router.reload("/");
           alert("successfully logged in");
         }
