@@ -1,16 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  experiment: {
-    appDir: true,
-    trailingSlash: true,
-  },
   experimental: {
-    appDir: true
+    trailingSlash: true,
+    appDir: true,
+    allowMiddlewareResponseBody: true,
   },
-
   env: {
-    NEXT_PUBLIC_URL: process.env.NEXT_PUBLIC_URL
+    NEXT_PUBLIC_URL: 'https://backend.mahakaliyatayat.com'
   }
 
 }

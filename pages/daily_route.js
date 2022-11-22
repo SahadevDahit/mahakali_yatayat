@@ -15,6 +15,7 @@ async function getData() {
   return res.json();
 }
 const Daily_route = () => {
+  console.log(`${process.env.NEXT_PUBLIC_URL}`);
   const [dailyroute, setdailyroute] = useState([]);
   const [Output, setOutput] = useState([]);
 
