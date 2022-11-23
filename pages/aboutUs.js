@@ -29,15 +29,13 @@ const aboutUs = () => {
           Mahakali Yatayat is located in Mahendranagar, Nepal.Thus Company is
           working in Bus Transportation business activities.
         </h4>
-        <div className="">
-          <Image
-            alt="image"
-            src="/kiran.jpg"
-            height={550}
-            width={660}
-            className="px-3"
-          />
-          <Image alt="image" src="/seat.jpg" height={550} width={660} />
+        <div className="w-100 py-2 d-lg-flex justify-content-around d-sm-block d-md-block">
+          <div className="p-1 container ">
+            <Image alt="image" src="/kiran.jpg" height={550} width={650} />
+          </div>
+          <div className="p-1 container ">
+            <Image alt="image" src="/seat.jpg" height={550} width={650} />
+          </div>
         </div>
       </div>
       <div

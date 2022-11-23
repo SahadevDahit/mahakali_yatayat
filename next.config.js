@@ -8,6 +8,7 @@ const nextConfig = {
   },
   env: {
     NEXT_PUBLIC_URL: 'https://backend.mahakaliyatayat.com'
+
   }
 
 }
