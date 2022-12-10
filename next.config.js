@@ -7,7 +7,7 @@ const nextConfig = {
     allowMiddlewareResponseBody: true,
   },
   env: {
-    NEXT_PUBLIC_URL: 'https://backend.mahakaliyatayat.com'
+    NEXT_PUBLIC_URL: 'https://mahakali-backend.vercel.app'
 
   }
 
